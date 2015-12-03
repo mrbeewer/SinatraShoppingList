@@ -4,17 +4,17 @@ A shopping list that allows the user to add, update, and delete items from said 
 ![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_Screenshot1.png)
 
 
-Technology:
+### Technology:
 * HTML & CSS
 * Embedded Ruby for View management
 * Sinatra - MVC
 * Postgresql - Database management
 
-Approach:
+### Approach:
 * Ruby Controllers
   * ApplicationController is used to connect to the database and set the stage
   * ItemsController is then used to route the user through the various views while managing the database
 
-Coming Improvements:
+### Coming Improvements:
 * Encryption
 * User login/regisration
