@@ -1,0 +1,35 @@
+html {
+  padding: 10px;
+}
+
+footer {
+  padding-top: 10px;
+}
+
+table, th, td {
+  /*border: 1px solid black;*/
+  padding: 40px;
+  margin: 10px;
+  border-collapse: collapse;
+  line-height: 50px;
+}
+
+table {
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+  text-align: center;
+}
+
+.button-link {
+  padding: 10px 15px;
+  background: #6a11c2;
+  color: #FFF;
+  border-radius: 10px;
+}
+
+.button-link:hover {
+  color: #FFF;
+  background: #64c211;
+  text-decoration: none;
+}

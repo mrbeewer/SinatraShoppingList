@@ -1,0 +1,27 @@
+<h4>Shopping List</h4>
+
+<p class="text-center">
+  <a class="button-link" href='/create'>Create Item</a>
+</p>
+
+<table>
+  <thead>
+    <th class="text-center">ID</th>
+    <th class="text-center">Name</th>
+    <th class="text-center">Quantity</th>
+    <th class="text-center">Update?</th>
+    <th class="text-center">Destroy?</th>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+    <tr>
+      <td><%= item.id %></td>
+      <td><%= item.name %></td>
+      <td><%= item.quantity %></td>
+      <td><a class="button-link" href='/update/<%= item.id %>'>Update</a></td>
+      <td><a class="button-link" href='/destroy/<%= item.id %>'>Destroy</a></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
