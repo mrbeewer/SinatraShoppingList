@@ -1,5 +1,5 @@
 # SinatraShoppingList
-A shopping list that allows the user to add, update, and delete items from said list.
+A CRUD shopping list that allows the user to add, update, and delete items from said list.
 
 ![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_Login-Register_3Dec2015.png)
 
@@ -9,14 +9,20 @@ A shopping list that allows the user to add, update, and delete items from said 
 ### Technology:
 * HTML & CSS
 * Embedded Ruby for View management
-* Sinatra - MVC
+* Sinatra - MVC and Sessions
 * Postgresql - Database management
+* BCrypt - User Authentication
 
 ### Approach:
 * Ruby Controllers
-  * ApplicationController is used to connect to the database and set the stage
-  * ItemsController is then used to route the user through the various views while managing the database
+  * ApplicationController - connect to the database and hold helper functions
+  * HomeController - control the root landing page
+  * UserController - contain routes for user creation, log on/off
+  * ItemsController - contain routes that interface with the database (create, read, update, destroy)
+
+### Change Log:
+* Basic Encryption Added - 3Dec2015
+* Basic User Login / Registration Added - 3Dec2015
 
 ### Coming Improvements:
-* Encryption
-* User login/regisration
+* Connect / Link Tables appropriately for users
