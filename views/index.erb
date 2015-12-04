@@ -1,8 +1,7 @@
 <h4>Shopping List</h4>
 
 <p class="text-center">
-  <a class="button-link" href='/items/create'>Create Item</a>
-  <a class="button-link" href='/users/logout'>LOG OUT</a>
+  <a class="button-link" href='/create'>Create Item</a>
 </p>
 
 <table>
@@ -20,8 +19,8 @@
       <td><%= item.id %></td>
       <td><%= item.name %></td>
       <td><%= item.quantity %></td>
-      <td><a class="button-link" href='/items/update/<%= item.id %>'>Update</a></td>
-      <td><a class="button-link" href='/items/destroy/<%= item.id %>'>Destroy</a></td>
+      <td><a class="button-link" href='/update/<%= item.id %>'>Update</a></td>
+      <td><a class="button-link" href='/destroy/<%= item.id %>'>Destroy</a></td>
     </tr>
     <% end %>
   </tbody>

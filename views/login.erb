@@ -1,12 +1,23 @@
+    <div class="container">
+      <div class="row">
 
-<form action="/submit_login" method="post">
-  <input type="text" name="user_name" value="" placeholder="Username">
-  <input type="password" name="user_password" value="" placeholder="Password">
+        <div class="col-xs-12">
+          <img id="logo" src="/img/shopping list logo.png">
+          <h1 class="text-center">Login</h1>
+          <% if @message %>
+            <li><%= @message %></li>
+          <% end %>
+        </div>
 
-  <input type="submit" value="Submit">
-</form>
+        <div class="col-xs-12">
 
+          <form class="" action="/users/login" method="post">
+            <input class="form-control" type="text" name="user_name" placeholder="Username">
+            <input class="form-control" type="password" name="password" placeholder="Password">
+            <input class="form-control" id="btn_login" type="submit" value="Log In">
+          </form>
 
-<p>
-  I'm a log in!
-</p>
+        </div>
+
+      </div>
+    </div>

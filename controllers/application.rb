@@ -12,8 +12,35 @@ class ApplicationController < Sinatra::Base
   set :views, File.expand_path("../../views", __FILE__)
   set :public_dir, File.expand_path("../../public", __FILE__)
 
-  not_found do
-    erb :not_found
+  # enable sessions
+  enable :sessions
+
+
+
+  # does the user account exist in the system?
+  def does_user_exist(user_name)
+    user = Account.find_by(:user_name => user_name)
+    if user
+      return true
+    else
+      return false
+    end
   end
+
+  # check session info with current user
+  def authorization_check
+    if session[:current_user] == nil
+      redirect "/login"
+    else
+      return true
+    end
+  end
+
+
+
+
+  # Routing for the App
+
+
 
 end

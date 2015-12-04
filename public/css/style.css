@@ -33,3 +33,13 @@ table {
   background: #64c211;
   text-decoration: none;
 }
+
+#warning-message {
+  color: red;
+}
+
+#logo {
+  width: 20%;
+  margin-left: 40%;
+  maring-right: 40%;
+}
