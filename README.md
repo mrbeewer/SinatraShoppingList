@@ -1,7 +1,9 @@
 # SinatraShoppingList
 A shopping list that allows the user to add, update, and delete items from said list.
 
-![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_Screenshot1.png)
+![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_Login-Register_3Dec2015.png)
+
+![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_ListView_3Dec2015.png)
 
 
 ### Technology:
