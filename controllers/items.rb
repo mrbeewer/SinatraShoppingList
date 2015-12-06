@@ -3,7 +3,15 @@ class ItemsController < ApplicationController
   # read (show list)
   get "/" do
     # get all items from the DB
-    @items = Item.all
+    # @items = Item.all
+    @user = session[:current_user].id
+    @items = Item.where(user_id: @user)
+    p "-----"
+    p @user
+    p "-----"
+    p Item.where(user_id: @user)
+    p "-----"
+    # @items = @user.items
     # show them appropriately using read.erb
     erb :read
   end
@@ -21,7 +29,12 @@ class ItemsController < ApplicationController
     @item = Item.new
     @item.name = params[:name]
     @item.quantity = params[:quantity]
+    @item.user_id = session[:current_user].id
     @item.save
+
+    p "-----"
+    p session[:current_user].id
+    p "-----"
 
     # display a message confirming the addition
     @message = "You have added " + @item.name + " to your list!"
@@ -46,6 +59,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     @item.name = params[:name]
     @item.quantity = params[:quantity]
+    @item.user_id = session[:current_user].id
     @item.save
 
     # display a message confirming the addition
@@ -71,7 +85,7 @@ class ItemsController < ApplicationController
 
     # show the view
     @message = "Your item has been removed!"
-    erb :message    
+    erb :message
   end
 
 

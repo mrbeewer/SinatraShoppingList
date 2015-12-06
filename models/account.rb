@@ -1,5 +1,7 @@
 class Account < ActiveRecord::Base
 
+  has_many :items
+
   include BCrypt
 
   # push the encrpted password (BCrypt) to the table

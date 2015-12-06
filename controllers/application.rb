@@ -37,10 +37,4 @@ class ApplicationController < Sinatra::Base
   end
 
 
-
-
-  # Routing for the App
-
-
-
 end

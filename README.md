@@ -1,5 +1,5 @@
 # SinatraShoppingList
-A CRUD shopping list that allows the user to add, update, and delete items from said list.
+A CRUD shopping list that allows the user to add, update, and delete items from said list. (user_name: guest, password: 1111)
 
 ![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_Login-Register_3Dec2015.png)
 
