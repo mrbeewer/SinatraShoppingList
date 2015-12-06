@@ -1,8 +1,10 @@
 class Account < ActiveRecord::Base
-
+  # DB relationship
   has_many :items
 
   include BCrypt
+
+
 
   # push the encrpted password (BCrypt) to the table
   def password=(pwd)
@@ -10,10 +12,12 @@ class Account < ActiveRecord::Base
   end
 
 
+
   # Return password
   def password
     BCrypt::Password.new(self.password_digest)
   end
+
 
 
   # authenticate user info
@@ -30,4 +34,4 @@ class Account < ActiveRecord::Base
     end
   end
 
-end
+end # END CLASS

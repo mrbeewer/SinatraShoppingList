@@ -27,8 +27,11 @@ class ApplicationController < Sinatra::Base
     end
   end
 
+
+
   # check session info with current user
   def authorization_check
+    # if there isn't a current session, redirect to login
     if session[:current_user] == nil
       redirect "/login"
     else
@@ -37,4 +40,4 @@ class ApplicationController < Sinatra::Base
   end
 
 
-end
+end # END CLASS
