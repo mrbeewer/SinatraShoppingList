@@ -1,45 +1,59 @@
-html {
-  padding: 10px;
+body {
+  background: #F5D0AA;
 }
 
 footer {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 table, th, td {
-  /*border: 1px solid black;*/
-  padding: 40px;
-  margin: 10px;
   border-collapse: collapse;
   line-height: 50px;
 }
 
 table {
-  width:50%;
-  margin-left:25%;
-  margin-right:25%;
+  width:40%;
+  margin: 0 auto;
   text-align: center;
 }
 
 .button-link {
   padding: 10px 15px;
-  background: #6a11c2;
+  background: #571D69;
   color: #FFF;
   border-radius: 10px;
 }
 
 .button-link:hover {
   color: #FFF;
-  background: #64c211;
+  background: #9A2720;
   text-decoration: none;
 }
 
+.form-control {
+  margin: 5px;
+}
+
+.form-update {
+  width: 410px;
+  margin: 0 auto;
+}
+
+.form-btn {
+  padding: 0px;
+  height: auto;
+  background: #571D69;
+  color: #FFF;
+  font-size: 2em;
+
+}
+
 #warning-message {
-  color: red;
+  color: #9A2720;
 }
 
 #logo {
   width: 20%;
   margin-left: 40%;
-  maring-right: 40%;
+  margin-right: 40%;
 }

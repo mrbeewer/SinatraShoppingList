@@ -50,8 +50,9 @@ class UserController < ApplicationController
       erb :login
     end
     post "/login" do
-      if (does_user_exist(params[:user_name]) == true
-         && params[:password] != "")
+      if (does_user_exist(params[:user_name]) == true &&
+         params[:password] != "")
+        # Authenticate user for login
         user = Account.authenticate(params[:user_name], params[:password])
         if user
           session[:current_user] = user

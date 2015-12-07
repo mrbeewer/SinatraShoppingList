@@ -1,2 +1,3 @@
-INSERT INTO items (name, quantity) VALUES ('ground chuck', 2.5);
-INSERT INTO items (name, quantity) VALUES ('Gallon Milk', 1);
+-- TODO: default item for all new accounts?
+-- INSERT INTO items (name, quantity) VALUES ('ground chuck', 2.5);
+-- INSERT INTO items (name, quantity) VALUES ('Gallon Milk', 1);

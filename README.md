@@ -1,10 +1,11 @@
 # SinatraShoppingList
 A CRUD shopping list that allows the user to add, update, and delete items from said list. (user_name: guest, password: 1111)
 
-![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_Login-Register_3Dec2015.png)
+![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_Login-Register_6Dec2015.png)
 
-![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_ListView_3Dec2015.png)
+![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_ListView_6Dec2015.png)
 
+![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_UpdateView_6Dec2015.png)
 
 ### Technology:
 * HTML & CSS
@@ -23,6 +24,10 @@ A CRUD shopping list that allows the user to add, update, and delete items from 
 ### Change Log:
 * Basic Encryption Added - 3Dec2015
 * Basic User Login / Registration Added - 3Dec2015
+* Updated Styling - 6Dec2015
+* Updated Notice page to redirect in 3seconds - 6Dec2015
+* Individual Tables for each User - 6Dec2015
 
 ### Coming Improvements:
-* Connect / Link Tables appropriately for users
+* Update the "refresh in 3 seconds" to show the time remaining
+* Improve responsive-ness (table issues on when the window is too small)

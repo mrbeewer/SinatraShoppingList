@@ -1,12 +1,19 @@
-<h4>Notice</h4>
+<h4 class="text-center">Notice</h4>
 
-<!-- if there is a message -->
-<% if @message %>
-    <!-- print that message -->
-    <strong><%= @message %></strong>
-<% end %>
-
-<!-- Add a button to go back home -->
 <p class="text-center">
-  <a class="button-link" href="/items/">Home</a>
+  <!-- if there is a message -->
+  <% if @message %>
+      <!-- print that message -->
+      <strong><%= @message %></strong>
+  <% end %>
 </p>
+
+<!-- CHANGED: Why click a button?? -->
+<!-- Add a button to go back home -->
+<!-- <form class="form-update" action="/items/">
+  <input class="form-btn" type="submit" value="Home">
+</form> -->
+<p class="text-center">
+  You will be returned home in 3 seconds...
+</p>
+<meta HTTP-EQUIV="REFRESH" content="3;url=/items/">

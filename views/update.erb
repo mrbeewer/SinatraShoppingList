@@ -1,10 +1,10 @@
-<h4>Update Item</h4>
+<h4 class="text-center">Update Item</h4>
 
-<p>
+<p class="text-center">
   <em>Update Item # <%= @item.id %>.</em>
 </p>
 
-<form action="/items/update" method="post">
+<form class="form-update" action="/items/update" method="post">
   <input type="hidden" name="id" value="<%= @item.id %>">
   <input type="text" name="name" value="<%= @item.name %>">
   <input type="text" name="quantity" value="<%= @item.quantity %>">
