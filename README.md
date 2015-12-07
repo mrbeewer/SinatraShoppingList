@@ -6,11 +6,6 @@ A CRUD shopping list that allows the user to add, update, and delete items from 
   <img src="https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_ListView_6Dec2015.png?raw=true" alt="Shopping List: List View"/>
   <img src="https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_UpdateView_6Dec2015.png?raw=true" alt="Shopping List: Update View"/>
 </p>
-![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_Login-Register_6Dec2015.png)
-
-![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_ListView_6Dec2015.png)
-
-![Screen shot of ShoppingList](https://github.com/mrbeewer/SinatraShoppingList/blob/master/screenshots/ShoppingList_UpdateView_6Dec2015.png)
 
 ### Technology:
 * HTML & CSS
